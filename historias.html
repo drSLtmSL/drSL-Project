@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>drSL Project</title>
+
+  <!-- Tailwind (opcional) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .cuento-card { cursor: pointer; transition: transform .2s; }
+    .cuento-card:hover { transform: scale(1.02); }
+    .thumb { width: 180px; height: 180px; object-fit: cover; }
+    @media (max-width: 767.98px) {
+      .thumb { width: 100%; height: 180px; }
+    }
+    .text-justify { text-align: justify; }
+  </style>
+</head>
+<body class="bg-white text-black">
+
+  <!-- Header -->
+  <header class="d-flex justify-content-between align-items-center p-4 bg-danger text-white rounded m-4 shadow">
+    <div class="fs-2 fw-bold">Historias</div>
+<div class="d-flex align-items-center justify-content-center bg-dark rounded p-2">
+  <a href="index.html">
+    <img class="img-fluid border border-light rounded" src="image/Copia de Copia de Copia de drSl.png" alt="Logo" width="90">
+  </a>
+</div>
+
+  </header>
+
+  <!-- Grid de cuentos -->
+  <main class="container my-4">
+    <div class="row g-4">
+
+      <!-- 1. Carta al Rey de Mármol Negro -->
+      <div class="col-md-6">
+        <div class="card cuento-card shadow" data-bs-toggle="modal" data-bs-target="#cuento1">
+          <div class="d-flex flex-column flex-md-row">
+            <img src="image/_5c8db7b9-3fff-4515-ad36-9f2819cae69d.jpg" class="thumb rounded-top rounded-md-start" alt="Carta al Rey de Mármol Negro">
+            <div class="card-body">
+              <h5 class="card-title">Carta al Rey de Mármol Negro</h5>
+              <p class="card-text text-muted">Una épica carta sobre ejércitos de piedra y la bestia Gaur de Cuarzo. Valor, sacrificio y un llamado a la batalla.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Hansel y Gretel -->
+      <div class="col-md-6">
+        <div class="card cuento-card shadow" data-bs-toggle="modal" data-bs-target="#cuento2">
+          <div class="d-flex flex-column flex-md-row">
+            <img src="image/Una ilustración de Hansel y Gretel durmiendo con una expresión de miedo con una ventana apuntando al (1).jpeg" class="thumb rounded-top rounded-md-start" alt="Hansel y Gretel">
+            <div class="card-body">
+              <h5 class="card-title">Hansel y Gretel</h5>
+              <p class="card-text text-muted">Versión oscura del clásico: un bosque letal, un gato invisible y criaturas sin ojos. ¿Quién es la verdadera bruja?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. El Picozapato y el Colibrí -->
+      <div class="col-md-6">
+        <div class="card cuento-card shadow" data-bs-toggle="modal" data-bs-target="#cuento3">
+          <div class="d-flex flex-column flex-md-row">
+            <img src="image/Designer.jpeg" class="thumb rounded-top rounded-md-start" alt="El Picozapato y el Colibrí">
+            <div class="card-body">
+              <h5 class="card-title">El Picozapato y el Colibrí</h5>
+              <p class="card-text text-muted">Fábula sobre la soberbia y la humildad. Un colibrí ingenioso le enseña a un picozapato una gran lección.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. El Castor y el Búho -->
+      <div class="col-md-6">
+        <div class="card cuento-card shadow" data-bs-toggle="modal" data-bs-target="#cuento4">
+          <div class="d-flex flex-column flex-md-row">
+            <img src="image/Designer (1).jpeg" class="thumb rounded-top rounded-md-start" alt="El Castor y el Búho">
+            <div class="card-body">
+              <h5 class="card-title">El Castor y el Búho</h5>
+              <p class="card-text text-muted">Honestidad y trabajo en equipo: una presa, dos amigos y muchas lecciones para la vida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. El Tardígrado y el Sol -->
+      <div class="col-md-6">
+        <div class="card cuento-card shadow" data-bs-toggle="modal" data-bs-target="#cuento5">
+          <div class="d-flex flex-column flex-md-row">
+            <img src="image/Designer (3).jpeg" class="thumb rounded-top rounded-md-start" alt="El Tardígrado y el Sol">
+            <div class="card-body">
+              <h5 class="card-title">El Tardígrado y el Sol</h5>
+              <p class="card-text text-muted">Diálogo poético entre lo diminuto y lo inmenso: valor, propósito y humildad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Sabiduría, Fuerza y Belleza -->
+      <div class="col-md-6">
+        <div class="card cuento-card shadow" data-bs-toggle="modal" data-bs-target="#cuento6">
+          <div class="d-flex flex-column flex-md-row">
+            <img src="image/Mapa cartográfico medieval con una tortuga Laud azul, una maripoza azul y un oso blanco cruzando el .jpeg" class="thumb rounded-top rounded-md-start" alt="Sabiduría, Fuerza y Belleza">
+            <div class="card-body">
+              <h5 class="card-title">Sabiduría, Fuerza y Belleza</h5>
+              <p class="card-text text-muted">Una tortuga laúd, una mariposa y un oso: viaje, refugio y solidaridad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Audio -->
+<div class="col-12">
+  <div class="p-4 bg-primary-subtle rounded shadow text-center">
+    <h5 class="fw-bold">🎧 Aladino y la lámpara mágica</h5>
+    <p class="text-muted">Breve relato de Aladino y sus aventuras.</p>
+    <audio class="w-100 mt-3" controls>
+      <source src="image/Audio.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+</div>
+
+    </div>
+  </main>
+
+  <!-- Modales con historias completas -->
+
+  <!-- Modal 1: Carta al Rey de Mármol Negro -->
+  <div class="modal fade" id="cuento1" tabindex="-1" aria-labelledby="cuento1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuento1Label">Carta al Rey de Mármol Negro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-justify">
+          <p>
+            Rey de la Tierra del Norte, yo Caballo Esmeralda clamo ante ti, el poder de tu ejército imbatible junto a mi clan, y el del rey de las tierras del oeste, el Supremo Jefe y el capitán General del reino de Mármol Blanco. Si tus soldados asisten a nuestra guerra, destruiremos un némesis en común, el Gaur de Cuarzo, una bestia indómita que exhala dolor y desesperación. Hace mucho tiempo, esta llegó al Reino de Jade, en la Provincia de la Serpiente Turquesa, acabó con todo a su paso, templos, castillos. Nada pudo hacerle frente a tal monstruo. Los soldados valientes retuvieron a la bestia por siete largos días, hasta que todos sucumbieron, ni siquiera el descanso eterno lograron por su sacrificio, sus cuerpos fueron corrompidos por la bestia y usados como esclavos que le sirven hasta el día de hoy, uno de los niños que fue salvado de esa masacre, apodado Verde Dragón por la Legión de sobrevivientes, dispuestos a honrar el nombre de sus padres y ancestros que perecieron ante el vil demonio púrpura. Verde Dragón, pasó de ser un niño pequeño al formidable último hombre con piel de Jade, comandó un ejército de setecientos soldados rasos de bronce y cobre, y un pequeño batallón de ciento setenta hombres de esmeralda. Verde Dragón especializado en el arco y la flecha, comandó por 40 días y 40 noches a su ejército derrotando a más de mil soldados de diamante y lapislázuli, de oro, de topacio, muchas almas liberadas del dominio del espectro. El demonio desesperado, nos llevó a nuestro campo de batalla alrededor de 10.000 hombres de obsidiana, nuestro ejército agotado y confiado fue emboscado y no pudo darle frente a esos combatientes, desde el Zafiro amanecer hasta el Rubí atardecer, uno a uno nuestros hombres fueron destrozados, nos vimos hundidos en el desespero, aquellos hombres solo necesitaban un certero puñetazo dirigido a nuestro cuerpo, para que nuestra armadura se dividiera en un montón de fragmentos, en el frío suelo del Desierto de Calcita. Yo me encontraba sin mis piernas, en el piso, siendo atravesado por un montón de flechas, en ese momento, Verde Dragón vino hacia mí y me protegió con su escudo, confesó que lamentaba que todo su ejército estuviera pereciendo a causa de su rabia y dolor de su pasado, cuando sentí que estaba a punto de morir por todas mis heridas, Verde Dragón se levantó y marchó al frente de la batalla solo, con todas sus fuerzas fue matando a todos los hombres de Obsidiana que pudo hasta que uno de ellos con su mazo, partió sus piernas. Verde Dragón antes de ser desmembrado por los guerreros de obsidiana, se quitó su casco y se quedó mirando al cielo. Las lanzas en su pecho no lograban que su corazón valeroso se detuviera, hasta el último momento luchó por su causa, la causa de un mundo donde los hombres de piedra viviéramos en armonía y tranquilidad, esta tenía que ser la última batalla, pero no logró vencerla. Uno a uno los soldados del bando enemigo golpeaban su rostro y lo fragmentaban, mientras él recitaba un poema a sus fraternos deseando que ahora estuvieran en un lugar más tranquilo. Lloré amargamente al ver a mi maestro, a mi hermano que me salvó y me dio un nuevo propósito que seguir, ver a ese hombre muerto en el piso con su sangre carmesí cubriéndolo mientras los soldados, se llevaban su casco, es una imagen que me marcó para siempre… La decisión es tuya, Rey de Mármol Negro. ¿Nos acompañarás en la batalla?
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Hansel y Gretel -->
+  <div class="modal fade" id="cuento2" tabindex="-1" aria-labelledby="cuento2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuento2Label">Hansel y Gretel</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-justify">
+          <p>
+            Había dos hermanos llamados Hansel y Gretel a los que sus padres echaron de la casa, a un bosque peligroso acompañados de un perro. Nadie salía vivo de ese bosque, lo primero que encontraron fue un montón de gatos rodeando un árbol y observando la punta. Había un montón de murciélagos y licántropos. Quienes se escondieron en una casa de dulce en la que una señora los recibió y les presentó a su acompañante, un gato que sólo ella veía. Les dio un banquete de carne y jugos. Y luego los acompañó a dormir. En la noche, empezaron a oír llantos y lamentos del bosque, su perro empezó a ladrar toda la noche hasta que se dejaron de escuchar. Los niños curiosos fueron a ver a la ventana y se encontraron a un ser sin ojos y piel verde con dientes sobresaliendo. Gritaron del susto y la señora de la casa fue a consolarlos. Al día siguiente, se despertaron y su perro estaba muerto, fueron a desayunar, y el gato que sólo veía a la señora le decía que les hiciera daño a los niños, pero ella que había vivido tanto tiempo sin compañía humana y sin hijos, les cogió afecto.
+          </p>
+          <p>
+            Los niños salieron al bosque a buscar frutos y a jugar. Al poco tiempo, volvieron a ver a la figura verde sin ojos y huyeron de vuelta a la casa. La señora de la casa hizo un conjuro y levantó otro ser rojo sin ojos que corrió detrás de donde los niños lo habían visto. El gato le decía a la señora que cocinara a los niños y, de tanta insistencia, prendió el horno y alimentó al niño con carne roja por un día, la criatura volvió y la señora la cocinó para engañar al gato, pero el gato leía sus pensamientos y le advirtió que si no cocinaba al niño iba a acabar con ella. Al día siguiente, tomó al niño y a la niña y les dijo que huyeran. Escaparon y corrieron a un pueblo, y contaron lo que sucedió, pensaron que la señora era una bruja y quemaron el bosque pero no encontraron a las criaturas que los niños describían, pero si a la señora muerta en su cama.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: El Picozapato y el Colibrí -->
+  <div class="modal fade" id="cuento3" tabindex="-1" aria-labelledby="cuento3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuento3Label">El Picozapato y el Colibrí</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-justify">
+          <p>
+            En un bosque verde del Congo Africano, lleno de árboles y sus deliciosos frutos, un Picozapato se estaba pavoneando y luciendo su pico largo y curvo, mientras caminaba, se jactaba de ser alto y “majestuoso”, se había afirmado asi mismo su superioridad sobre los demás pájaros del bosque, valores que el mismo se metió en su cabeza, había pasado sus días pisando las casas de los pequeños animalitos como escarabajos y hormigas, zarandeando serpientes inofensivas con su pico, y pellizcando primates inadvertidos con sus garras. Un día en su trayecto observó a un colibrí, en un ataque de impulsividad quiso hacerle daño, pero el colibrí lo hizo perseguirlo por un largo tiempo, el Picozapato no quería irse sin hacerle un mal, pero el colibrí fue astuto y lo condujo a la cima de una montaña, el Picozapato entusiasmado de estar correteando al animalito, llegó a la cima, vió todo debajo de él y se creyó el rey del mundo, en esa cima lo estaban observando las águilas, que lo dejaron continuar y habían decidido ver como terminaba la persecución, la soberbia cegó al pájaro alto y este quiso perseguir al colibrí en el aire, pero al batir las alas casi se queda sin aliento por la altura y cuando decidió que quería tragarse al colibrí, este último voló hacia atrás y golpeó la frente del picozapato. Este cayó desplomado al suelo en el hábitat del escarabajo pelotero, que al ver cómo destruyó su casa empezó a morderlo con su familia.
+          </p>
+          <p>
+            Las águilas se rieron a carcajadas del pájaro iluso y alabaron la valentía del colibrí con respeto, pero este último fue hacia abajo y le dijo al Picozapato “La humildad es una virtud. Es mejor ser humilde que arrogante.”, pidió a los escarabajos que lo dejaran y le dijo “¿Estás bien? Levántate, aprende de tus errores, reconoce tus fallas y se mejor cada día de ahora en adelante”, el Picozapato admirado porque el colibrí bajo a socorrerlo decidió ser mejor, empezando por reconstruir las casas de los pequeños animales y alcanzar los frutos altos a los más pequeños, con el tiempo el Picozapato y el Colibrí se volvieron amigos y ambos han cuidado el bosque desde entonces. 
+            <br>
+            <strong>Moraleja:</strong>  La soberbia es un defecto que nos lleva a juzgar a los demás sin conocerlos. Si somos humildes, podremos aprender de los demás y crecer como personas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4: El Castor y el Búho -->
+  <div class="modal fade" id="cuento4" tabindex="-1" aria-labelledby="cuento4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuento4Label">El Castor y el Búho</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-justify">
+          <p>
+            En un bosque de Italia, tierra de las montañas de las Montañas, Robles y Abetos, un castor se despertó al amanecer, su familia seguía durmiendo en su madriguera, una estructura compleja que había sido hecha de ramas, barro y musgo. El padre castor se sumergió en el río para llevarle algunos lirios de agua y algas a su esposa castora que estaba apunto de tener su próxima camada de castorcitos. Era una familia muy feliz y unida, llena de amor y respeto. Juntos construyeron una gran presa donde estaban almacenando comida para el invierno y donde  estaban a salvo de los depredadores.
+          </p>
+          <p>
+            Un día un búho se encontraba volando sobre el estanque de los castores, observaba como las percas y las truchas se quedaban atoradas en las ramas y tuvo una idea. Descendió y aterrizó donde se encontraba el padre castor y le dijó:
+            <br>-Qué presa tan eficiente has construido, es una maravilla arquitectónica sin duda alguna.
+            <br>-Te lo agradezco -dijo el castor- .No ha sido un trabajo exclusivo mio, ha sido obra de mi familia, un gran trabajo en equipo de mi esposa y mis hijos.
+            <br>-¿Te gustaría construir una presa conmigo? preguntó el búho.
+            <br>-¿Quieres construir una presa conmigo?, pero tú no eres muy trabajador. Dijo el castor.
+            <br>-Lo admito, pero soy un animal muy inteligente, mi experiencia te puede servir como apoyo para ayudarte a crearla. Dijo el búho.
+            <br>-Está bien, haré una presa contigo, pero en este momento mi esposa está a punto de tener una camada, tendrás que ayudar a protegerlos mientras no estoy. le contestó el castor.
+            <br>-Lo haré. replicó el búho.
+          </p>
+          <p>
+            Ambos construyeron la presa, cuando la terminaron, la madre castor tuvo a sus hijos, el Búho los cobijó con sus alas mientras su madre se estaba reponiendo del parto, mientras tanto los castorcitos más grandes se estaban degustando con los roedores que cazaba su amigo búho. Cuando llegó el padre castor le señaló al búho que su presa estaba terminada, ambos por varias semanas con esfuerzo y dedicación construyeron una gran presa donde el búho podía resguardar a sus polluelos y alimentarlos con los peces que se habían atorado en las grandes ramas.
+          </p>
+          <p>
+            Pasaron varios años y los castorcitos ahora eran grandes y fuertes, siempre agradecidos por el cuidado que les dió su tío búho, las crías del búho se independizaron y se volvieron fuertes cazadores. 
+            El búho estaba tomando el sol con su amigo castor, dialogando de la naturaleza, cuando unas ardillas llegaron y preguntaron al búho: ¿Qué gran presa, la has construido tú?
+            El búho con toda la sinceridad y orgullo dijo: Mi amigo castor la construyó con mis ideas,  no fue un trabajo exclusivo mío, fue un trabajo en equipo.
+            El castor quedó admirado y le agradeció por su honestidad.
+            
+            <br>
+            <strong>Moraleja:</strong> La honestidad es siempre la mejor opción, un verdadero amigo siempre dice la verdad. Un trabajo es más eficiente cuando lo hacemos en equipo y reconocemos el esfuerzo de todos los integrantes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5: El Tardígrado y el Sol -->
+  <div class="modal fade" id="cuento5" tabindex="-1" aria-labelledby="cuento5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuento5Label">El Tardígrado y el Sol</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-justify">
+          <p>
+            En un universo inmenso, en un cúmulo de galaxias, en una galaxia en espiral barrada, en un sistema planetario se encontraban 8 hermanos, en uno de ellos, obra magna de la vida, había un conjunto de tierras y agua, en un continente, en un país, en un bosque, en el pasto, en un charco, en una pequeña gota de ese charco lleno de musgo, había un ser pequeño que se alimentaba de pequeñas plantas.
+            El sol desde su inmensa lejanía y poder en el espacio lo observó  y le dijó:
+            <br><br>
+            Oh, pequeño tardígrado,<br>
+            Tan insignificante eres,<br>
+            Que ni siquiera mereces<br>
+            Que te dedique este verso.<br>
+            <br>
+            Eres tan pequeño,<br>
+            Que apenas se te ve,<br>
+            Y tan insignificante,<br>
+            Que ni siquiera importas.
+          </p>
+          <p>
+            El tardígrado respondió:
+            <br><br>
+            Oh, gran sol, que te crees tan importante,<br>
+            Que te crees que todo lo ves,<br>
+            Y que todo lo sabes,<br>
+            Que crees que todo lo puedes.
+            <br><br>
+            ¿Pero qué eres más que una bola de gas?<br>
+            Muchas como tu hay una infinidad<br>
+            Te crees muy grande e inmenso<br>
+            pero no eres más que un grano de arena diminuto<br>
+            en un gran espacio inmenso y absoluto.
+            <br><br>
+            Te crees indispensable y soberbio<br>
+            Más si te fueras el universo, este seguiría existiendo,<br>
+            Todos tienen su propósito sean grandes o pequeños,<br>
+            nadie es menos que el otro,<br>
+            deberías dejar de ser tan creído y reconocer a los demás.
+            <br><br>
+            <strong>Moraleja:</strong> Todos, sin importar nuestro tamaño o estatus, tenemos un propósito y un valor. Todos somos valiosos y merecemos ser tratados con respeto. Debemos ser humildes y reconocer el valor de los demás.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Sabiduría, Fuerza y Belleza -->
+  <div class="modal fade" id="cuento6" tabindex="-1" aria-labelledby="cuento6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cuento6Label">Sabiduría, Fuerza y Belleza</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-justify">
+          <p>
+            Había una vez una tortuga laúd, había nadado un vasto océano para llegar a una costa de una tierra fría y boscosa, al llegar a tierra firme se dispuso a cerrar los ojos y reflexionar sobre su larga vida. Las tortugas Laúd viven alrededor de 30 años, él ya tenía 28 y sabía que había logrado su propósito en la vida, sobrevivió a los depredadores, se escabulló de la pesca humana, tuvo diversas parejas y muchos hijos a los que nunca volvió a ver, diariamente como un pensamiento privado pensaba en cómo sería la vida de ellos, pero después de todo era una Laúd, una especie solitaria que solo deambulaba en el océano en busca de comida, tantos años le conllevaron experiencia y emociones diversas pero, creía que era momento de descansar, se detuvo en la costa y pasó días inmóviles observando el cielo hasta que cayó en un sueño profundo.
+          </p>
+          <p>
+            Se sumergió en el océano de los sueños de las tortugas, era un vasto mar de ideas y pensamientos, él nadaba alrededor de los corales de la felicidad, cuando un remolino acuático lo hundió hasta una profundidad. Despertó inquieto y abriendo los ojos lentamente observó una mariposa en la punta de su cabeza. Era una mariposa de un color azul metálico y franjas negras, estaba llorando. 
+            La tortuga trató de quitársela pero esta empezó a hablarle: Todas las plantas donde construimos nuestros hogares han sido arrancadas, todas mis hermanas fueron perseguidas y encerradas en frascos de vidrio por los humanos, no he visto a otra como yo en mucho tiempo y si no encuentro una pareja pronto mi especie se extinguirá. La tortuga trato de calmarla pero pronto irrumpió un oso, era blanco y grande, de ojos rojos, con unas manchas marrones rodeando sus ojos, dijo en voz alta: Tengo el mismo problema, los humanos han acabado con mi manada, verán nuestra especie normalmente es de color negro pero, eramos una variedad de hermosos osos blancos que resaltó en la multitud, los nativos nos respetaban y nosotros los respetabamos, pero el hombre invasor nos perseguía por nuestras pieles y ahora he huido hasta este terreno.
+          </p>
+          <p>
+            La tortuga empatizo con los animales y les comentó: No puedo hacer mucho por ustedes pero, conozco una isla cerca de este montón de tierra, en ella un grupo de humanos nos acogió a mi y a mis hermanos cuando estuvimos a punto de ser extintos, puedo conducirlos a ella si lo desean.
+            La mariposa agregó: El bosque de donde provengo ya no existe, no tengo nada más que perder.
+            El oso mencionó a la tortuga que estaba interesado.
+            La tortuga podía llevar a la mariposa flotando pero los humanos la podían pescar y él sabía bien que una tortuga pescada no siempre terminaba bien. Pero el oso no podía ir sobre la tortuga. 
+          </p>
+          <p>
+            La tortuga hizo unos planos de una balsa sobre la arena, el oso se encargaría de traer los pesados troncos y la mariposa los hilos gruesos que la unirían. La tortuga con ayuda de su memoria los conduciría a la isla.
+            Demoraron cuatro días largos en armar una mini barca que los conduciría a la isla, era tal el cansancio que cayeron agotados por 17 horas, al despertar, en la costa empezó a llover fuertemente, se levantaron y entraron en la barca. Una fuerte tormenta casi los hunde, pero una luz en el cielo los mantuvo esperanzados todo el tiempo. Llegaron a la isla y los humanos los resguardaron. La tortuga ayudó a los dos animales pero no se quedó a ser resguardada, ella se quedó en la orilla del mar y volvió a soñar, esta vez se sumergió en un dulce océano de recuerdos del que no volvería a despertar.
+            <br>
+            <strong>Moraleja:</strong> Siempre hay alguien que puede ayudarnos, incluso cuando las cosas parecen imposibles. Debemos ayudarnos siempre.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="container my-4">
+    <div class="p-4 bg-black text-white rounded text-center text-sm-start">
+      <h2 class="fs-5 fw-bold">Contacto</h2>
+      <p class="mb-0">Correo: davidricardoslk@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
